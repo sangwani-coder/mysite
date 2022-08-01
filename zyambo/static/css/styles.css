@@ -1,0 +1,71 @@
+/* logo img*/
+img {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 80px;
+    left: 20px;
+    top: 10px;
+    float: left;
+}
+
+/* Intro */
+.intro {
+    position: relative;
+    left: 40px;
+}
+#name {
+    position: relative;
+    top: 30px;
+}
+
+#job {
+    position: relative;
+    top: 10px;
+}
+/* nav style */
+nav {
+    position: relative;
+    left: 1050px;
+    top: 1px;
+}
+
+.active {
+    color: blue;
+    font-size: x-large;
+}
+
+.nav-link {
+    color: black;
+    font-size: large;
+}
+
+a:hover {
+    color: bisque;
+}
+
+/* remove anchore underlines */
+a {
+    text-decoration: none;
+}
+
+/* bio class */
+
+
+/* social links */
+.social {
+    text-align: center;
+}
+
+/* footer */
+footer {
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50px;
+    right: 30px;
+    font-size: small;
+    color: gray;
+}

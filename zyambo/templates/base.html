@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Portfolio Website">
+        <meta name="author" content="Peter S. Zyambo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Peter Zyambo</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     </head>
     <body>
+        <img src="{{url_for('static', filename='/img/pz.png')}}" alt="PZ-logo">
         <div class="intro">
-            <h1>Peter Zyambo</h1>
-            <p>Software engineer, Martial artist</p>
+            <h1 id="name">Peter Zyambo</h1>
+            <p id="job">Software engineer, Martial artist</p>
         </div>
         <nav>
-                <a href="/zyambo/">Home</a><span> |</span>
-                <a href="/zyambo/projects/">Projects</a><span> |</span>
-                <a href="/zyambo/about/">About</a><span> |</span>
-                <a href="/zyambo/contact">Contact</a><span> |</span>
-                <a href="/zyambo/api/v1/">API</a>
+                <a class="active" href="{{url_for('app_views.index')}}">Home</a><span> |</span>
+                <a class="nav-link" href="{{url_for('app_views.projects')}}">Projects</a><span> |</span>
+                <a class="nav-link" href="{{url_for('app_views.about')}}">About</a><span> |</span>
+                <a class="nav-link" href="{{url_for('app_views.contact')}}">Contact</a><span> |</span>
+                <a class="nav-link" href="{{url_for('app_views.api_route')}}">API</a>
         </nav>
+        <hr>
         {% block content %}
         {% endblock %}
         
         <div class="social">
             <a href="#">LinkedIn</a><span> |</span> <a href="#">Twitter</a><span> |</span><a href="">Github</a>
         </div>
-        <footer>Peter Zyambo 2022</footer>
+        <footer> Copyright &copy 2022 Peter S. Zyambo.</footer>
     </body>
 </html>

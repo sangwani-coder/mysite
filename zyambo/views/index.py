@@ -1,6 +1,6 @@
 """ index view"""
 from zyambo.views import app_views
-from flask import jsonify, render_template
+from flask import jsonify, render_template, url_for
 
 @app_views.route("/", methods=['GET'], strict_slashes=False)
 def index() -> str:
