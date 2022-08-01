@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Peter Zyambo</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <img src="{{url_for('static', filename='/img/pz.png')}}" alt="PZ-logo">
@@ -26,7 +27,9 @@
         {% endblock %}
         
         <div class="social">
-            <a href="#">LinkedIn</a><span> |</span> <a href="#">Twitter</a><span> |</span><a href="">Github</a>
+            <a href="https://www.linkedin.com/in/sangwani-pz" class="fa fa-linkedin fa-32x">
+            </a><span> </span> <a href="https://www.twitter.com/peter_zyambo" class="fa fa-twitter">
+            </a><span>  </span><a href="https://www.github.com/sangwani-coder" class="fa fa-github"></a>
         </div>
         <footer> Copyright &copy 2022 Peter S. Zyambo.</footer>
     </body>

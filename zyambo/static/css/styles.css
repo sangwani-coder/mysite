@@ -57,7 +57,24 @@ a {
 .social {
     text-align: center;
 }
+.fa-twitter {
+    background-color: #55ACEE;
+    color: white;
+    padding: 10px;
+}
 
+.fa-linkedin {
+    background-color: #3B5997;
+    color: white;
+    padding: 10px;
+}
+
+
+.fa-github {
+    background-color: gray;
+    color: black;
+    padding: 10px;
+}
 /* footer */
 footer {
     text-align: right;
