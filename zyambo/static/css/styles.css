@@ -1,3 +1,9 @@
+/* body */
+
+body {
+    background-color: #F0ECEC;
+}
+
 /* logo img*/
 img {
     position: relative;
@@ -15,6 +21,7 @@ img {
     position: relative;
     left: 40px;
 }
+
 #name {
     position: relative;
     top: 30px;
@@ -51,7 +58,31 @@ a {
 }
 
 /* bio class */
+.bio {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.bio-box {
+    padding: 20px;
+    bottom: 30px;
+}
 
+#bio {
+    font-size: medium;
+    position: relative;
+    text-align: center;
+    width: 720px;
+    margin: auto;
+    color: whitesmoke;
+    background-color: black;
+    border: 5px solid gray;
+}
+
+.link-anchor {
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
 
 /* social links */
 .social {
@@ -69,6 +100,9 @@ a {
     padding: 10px;
 }
 
+.home-projects {
+    text-align: center;
+}
 
 .fa-github {
     background-color: gray;
