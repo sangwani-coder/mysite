@@ -8,7 +8,7 @@
         <title>Peter Zyambo</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- <script src="{{url_for('static', filename='js/script.js')}}"></script> -->
+        <script src="{{url_for('static', filename='js/script.js')}}"></script>
     </head>
     <body onload="typeWriter()">
         <img src="{{url_for('static', filename='/img/pz.png')}}" alt="PZ-logo">
@@ -33,24 +33,5 @@
             </a><span>  </span><a href="https://www.github.com/sangwani-coder" class="fa fa-github"></a>
         </div>
         <footer> Copyright &copy 2022 Peter S. Zyambo.</footer>
-        <script>
-            let i = 0;
-            const bio = 'My name is Peter Zyambo a software engineering student at ALX, specializing in backend engineering.\
-            I love solving problems and buid fullstack web and desktop applications.\
-            In my spare time I study about Human Computer Interaction (HCI) and Database Design.\
-            My motto in life is to AIM HIGH.';
-            const speed = 55;
-
-            function typeWriter() {
-                if ( i < bio.length) {
-                    if ( bio.charAt(i-1) === '.'){
-                        document.getElementById("bio").innerHTML += "<br>";    
-                    }
-                    document.getElementById("bio").innerHTML += bio.charAt(i);
-                    i++;
-                    setTimeout(typeWriter , speed);
-                }
-            }
-        </script>
     </body>
 </html>
