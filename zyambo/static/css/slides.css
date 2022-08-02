@@ -1,0 +1,64 @@
+.home {
+    /* \Photo by <a href="https://unsplash.com/@afgprogrammer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mohammad Rahmani</a> on <a href="https://unsplash.com/s/photos/software-engineer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+    background-image: url('../img/sen.jpg'); 
+    background-repeat: no-repeat;
+    background-size: 100% 65%;
+    background-position: bottom;
+}
+
+
+#pz {
+    color: white;
+}
+
+
+.tag {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.tag-pz {
+    color: white;
+    background-color: brown;
+    padding: 10px;
+    font-weight: bolder;
+}
+.scroll-text  {
+    height: 100px;
+}
+
+.contact-cls {
+    list-style: none;
+    font-size: larger;
+    text-align: center;
+}
+
+#pipe {
+    color: green;
+    font-size: large;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: px 0;
+
+    /* position tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+}

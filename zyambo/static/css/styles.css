@@ -2,6 +2,7 @@
 
 body {
     background-color: #F0ECEC;
+    overflow: hidden;
 }
 
 /* logo img*/
@@ -59,19 +60,22 @@ a {
 
 /* bio class */
 .bio {
+    border: 5px solid gray;
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.bio-box {
+.terminal {
     padding: 20px;
     bottom: 30px;
+    color: #ddd;
+    text-align: center;
 }
 
 #bio {
     font-size: medium;
     position: relative;
-    text-align: center;
-    width: 720px;
+    width: 740px;
+    border-width: 10px;
     margin: auto;
     color: whitesmoke;
     background-color: black;
@@ -84,8 +88,12 @@ a {
     font-weight: bold;
 }
 
+.social-line {
+    padding-bottom: 10px;
+}
 /* social links */
 .social {
+    padding-top: 15px;
     text-align: center;
 }
 .fa-twitter {
@@ -100,17 +108,13 @@ a {
     padding: 10px;
 }
 
-.home-projects {
-    text-align: center;
-}
-
 .fa-github {
     background-color: gray;
     color: black;
     padding: 10px;
 }
 /* footer */
-footer {
+.footer-section {
     text-align: right;
     margin-left: auto;
     margin-right: auto;
@@ -119,4 +123,23 @@ footer {
     right: 30px;
     font-size: small;
     color: gray;
+}
+
+.home-projects {
+    text-align: center;
+}
+
+.work {
+    background-color: aliceblue;
+    border-color: #3B5997;
+    color: black;
+    border: 2px solid black;
+}
+
+table {
+    margin: auto;
+}
+
+.ready {
+    color: red;
 }
