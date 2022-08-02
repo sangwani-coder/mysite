@@ -1,15 +1,15 @@
 {% extends 'base.html'%}
 {% block content%}
 <div class="terminal">
-    <div class="bio tooltip">Hover over me to get in touch for
+    <div class="bio tooltip">Hover over me and see what I am available for...
     <ul class="contact-cls tooltiptext">
-        <li>&#10003; Internship offers</li>
-        <li>&#10003; Job offers</li>
-        <li>&#10003; Freelance work</li>
-        <li>&#10003; Networking</li>
-        <li>&#10003; Buy me a coffee</li>
+        <li>&#128187; Internship offers</li>
+        <li>&#128187; Job offers</li>
+        <li>&#128187; Freelance work</li>
+        <li>&#x1f30d; Networking </li>
+        <li>&#9749; Buy me a coffee &#x1F61C;</li>
     </div>
-    <p>sangwanizyambo@gmail.com <span id="pipe"> || </span><a class="">resume</a> <span id="pipe"> || </span> +260-969-620-939</p>
+    <p>sangwanizyambo@gmail.com <span id="pipe"> || </span><a href="{{ url_for('static', filename='img/pz_cv.pdf') }}" download="peterzyambo">resume</a> <span id="pipe"> || </span> +260-969-620-939</p>
     
 </div>
 

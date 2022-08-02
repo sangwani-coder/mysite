@@ -43,6 +43,7 @@
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
+    border: 5px solid gray;
 }
 
 .tooltip .tooltiptext{
@@ -61,4 +62,45 @@
 
 .tooltip:hover .tooltiptext{
     visibility: visible;
+}
+
+.blink-me {
+    animation: blinker 20s step-start infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.my_menu {
+    background-color: blue;
+    color: white;
+}
+
+.new_menu
+{
+    background-color: red;
+    color: white;
+}
+
+.project_links {
+    font-size: x-small;
+    font-style: oblique;
+    background-color: brown;
+    padding: 5px;
+    /* font-weight: bolder; */
+}
+
+.github {
+    color: orange;
+}
+
+.live {
+    color: yellow;
+}
+
+.p-name {
+    color: coral;
 }
