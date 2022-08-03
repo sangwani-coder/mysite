@@ -1,8 +1,8 @@
 /* body */
 
 body {
-    background-color: #F0ECEC;
-    overflow: hidden;
+    background-color: black;
+    
 }
 
 /* logo img*/
@@ -37,6 +37,7 @@ nav {
     position: relative;
     left: 1050px;
     top: 1px;
+    
 }
 
 .active {

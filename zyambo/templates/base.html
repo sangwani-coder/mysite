@@ -4,17 +4,18 @@
         <title>Peter Zyambo</title>
         <!-- meta info -->
         <meta charset="UTF-8">
-        <meta name="description" content="Portfolio Website">
-        <meta name="author" content="Peter S. Zyambo">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Portfolio Website"/>
+        <meta name="author" content="Peter S. Zyambo"/>
         <!-- stylesheet -->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/slides.css') }}">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/slides.css') }}"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
                <!-- icon -->
-        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/pz.ico') }}">
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/pz.ico') }}"/>
                <!-- js -->
         <script src="{{url_for('static', filename='js/script.js')}}"></script>
+        
     </head>
     <body onload="typeWriter();" class="home">
         <a href="{{url_for('app_views.index')}}"><img src="{{url_for('static', filename='/img/pz.png')}}" alt="PZ-logo"></a>

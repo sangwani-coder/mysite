@@ -6,6 +6,12 @@
     background-position: bottom;
 }
 
+.cover {
+    background-color: black;
+    color: red;
+    
+}
+
 
 #pz {
     color: white;
@@ -108,4 +114,7 @@
 
 .resume {
     color: white;
+}
+.apology {
+    border: 100px;
 }
