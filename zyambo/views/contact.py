@@ -2,7 +2,7 @@
 from zyambo.views import app_views
 from flask import jsonify, render_template
 
-@app_views.route('/contact', methods=['GET', 'POST'], strict_slashes=False)
+@app_views.route('/zyambo/contact', methods=['GET', 'POST'], strict_slashes=False)
 def contact() -> str:
     """ contact route
     """
