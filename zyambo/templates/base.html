@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Peter Zyambo</title>
+        <title>{%block title%}Peter Zyambo{%endblock%}</title>
         <!-- meta info -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -18,16 +18,16 @@
         
     </head>
     <body onload="typeWriter();" class="home">
-        <a href="{{url_for('app_views.index')}}"><img src="{{url_for('static', filename='/img/pz.png')}}" alt="PZ-logo"></a>
+        <a class="nav-link" href="{{url_for('app_views.index')}}"><img src="{{url_for('static', filename='/img/pz.png')}}" alt="PZ-logo"></a>
         <div class="intro">
             <h1 id="name">Peter Zyambo</h1>
             <p id="job">Software engineer</p>
         </div>
-        <nav>
+        <nav class="nav-color">
                 <a class="active" href="{{url_for('app_views.index')}}">Home</a><span id="pipe"> |</span>
-                <a class="nav-link" href="{{url_for('app_views.projects')}}">projects</a><span id="pipe"> |</span>
-                <a class="nav-link" href="{{url_for('app_views.about')}}">about me</a><span id="pipe"> |</span>
-                <a class="nav-link" href="{{url_for('app_views.contact')}}">contact me</a><span id="pipe"> |</span>
+                <a class="nav-link" href="{{url_for('app_views.projects')}}">My Projects</a><span id="pipe"> |</span>
+                <a class="nav-link" href="{{url_for('app_views.about')}}">About me</a><span id="pipe"> |</span>
+                <a class="nav-link" href="{{url_for('app_views.contact')}}">Contact me</a><span id="pipe"> |</span>
                 <!-- <a class="nav-link" href="{{url_for('app_views.api_route')}}">API</a> -->
         </nav>
         <hr>
@@ -45,7 +45,7 @@
         </section>
         <section class="footer-section">
             <!-- <footer> Copyright &copy 2022 Peter S. Zyambo.</footer> -->
-            <h3 class="tag tag-dev">Designed and Developed by <span class="tag-pz">Peter Zyambo</span></h3>
+            <h3 class="tag "><span id="tag-dev">Designed and Developed by</span> <span class="tag-pz">Peter Zyambo</span></h3>
         </section>
     </body>
 </html>

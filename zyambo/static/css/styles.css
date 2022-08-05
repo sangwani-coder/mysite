@@ -19,6 +19,7 @@ img {
 
 /* Intro */
 .intro {
+    color: #55ACEE;
     position: relative;
     left: 40px;
 }
@@ -35,18 +36,18 @@ img {
 /* nav style */
 nav {
     position: relative;
-    left: 1050px;
+    left: 980px;
     top: 1px;
     
 }
 
 .active {
-    color: blue;
+    color: green;
     font-size: x-large;
 }
 
 .nav-link {
-    color: black;
+    color: white;
     font-size: large;
 }
 
