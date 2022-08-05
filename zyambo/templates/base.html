@@ -3,8 +3,8 @@
     <head>
         <title>{%block title%}Peter Zyambo{%endblock%}</title>
         <!-- meta info -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!-- <meta charset="UTF-8"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Portfolio Website"/>
         <meta name="author" content="Peter S. Zyambo"/>
         <!-- stylesheet -->
@@ -17,13 +17,13 @@
         <script src="{{url_for('static', filename='js/script.js')}}"></script>
         
     </head>
-    <body onload="typeWriter();" class="home">
+    <body onload="typeWriter();" class="home" id="container">
         <a class="nav-link" href="{{url_for('app_views.index')}}"><img src="{{url_for('static', filename='/img/pz.png')}}" alt="PZ-logo"></a>
         <div class="intro">
             <h1 id="name">Peter Zyambo</h1>
             <p id="job">Software engineer</p>
         </div>
-        <nav class="nav-color">
+        <nav class="nav-color nav-menu">
                 <a class="active" href="{{url_for('app_views.index')}}">Home</a><span id="pipe"> |</span>
                 <a class="nav-link" href="{{url_for('app_views.projects')}}">My Projects</a><span id="pipe"> |</span>
                 <a class="nav-link" href="{{url_for('app_views.about')}}">About me</a><span id="pipe"> |</span>
