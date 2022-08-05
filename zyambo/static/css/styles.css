@@ -2,6 +2,12 @@
 
 body {
     background-color: black;
+    min-height: 100vh;
+    /* max-width: 400px; */
+    
+}
+
+#container {
     
 }
 
