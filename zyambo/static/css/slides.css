@@ -5,6 +5,15 @@
     background-size: 100% 65%;
     background-position: bottom;
 }
+/* 
+.apology {
+    /* Photo by <a href="https://unsplash.com/@sadmax?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Amber Kipp</a> on <a href="https://unsplash.com/s/photos/surprised-cat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
+    background-image: url('../img/cat.jpg') 50px 50px; 
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+} */
 
 .cover {
     background-color: black;
@@ -19,11 +28,13 @@
 
 
 .tag {
-    color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
 }
 
+#tag-dev {
+    color: #fff;
+}
 .tag-pz {
     color: white;
     background-color: brown;
@@ -115,6 +126,8 @@
 .resume {
     color: white;
 }
+
 .apology {
+    text-align: center;
     border: 100px;
 }

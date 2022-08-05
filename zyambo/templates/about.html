@@ -1,4 +1,5 @@
 {% extends 'base.html'%}
+{% block title%}About{%endblock%}
 {% block content%}
 <div class="terminal">
     <!-- <h1 style="color: orange">About me</h1> -->
@@ -8,7 +9,7 @@
             as an after school activity to kids aged 8 to 13 years.</p>
         <p>It's my pleasure to have been the first person to introduce coding clubs in four private schools in my district and I've since taught over 60 students since 2018.</p>
         <P>My talent lies in my ability to learn anything that I develop interest in up to an above average skill level. And from 2020 my interest has been in software engineering.</P>
-        <p>I spend my free time doing one of the following activities: reading about science, history, solving math problems, teaching and practicing martial arts, <br> learning about new technologies and practicing the piano, trumpet or the guitar. Download my <a href="{{ url_for('static', filename='img/pz_cv.pdf') }}" download="peterzyambo" class="resume">resume.</a></p>
+        <p>I spend my free time doing one of the following activities: reading about science, history, solving math problems, teaching and practicing martial arts, <br> learning about new technologies and practicing the piano, trumpet or the guitar... | <a href="{{ url_for('static', filename='img/pz_cv.pdf') }}" download="peterzyambo" class="resume">resume</a> |</p>
 
     </div>
 </div>

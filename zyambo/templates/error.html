@@ -1,7 +1,9 @@
 {%extends 'base.html'%}
+
+{% block title%}Error!{%endblock%}
 {%block content%}
 <div class="apology">
-    <h1 style="color: white;"> Whoops!</h1>
+    <h1 style="color: white;" class="error-title"> Error!</h1>
     <h3 style="color: white;">{{error}}</h3>
 </div>
 
