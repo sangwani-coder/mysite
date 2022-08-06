@@ -1,7 +1,8 @@
 # mysite  August 8 2022
 This is my latest personal website created with Flask 2.1.3 and hosted on PythonAnywhere.
+<img src="https://github.com/sangwani-coder/mysite/blob/main/img/mysite.png">
 
-## [Live site]('https://zyambo.pythonanywhere.com')
+[visit live site](https://zyambo.pythonanywhere.com)
 ## Technologies used
 - Python 3.9
 - Flask 2.1.3
@@ -9,7 +10,7 @@ This is my latest personal website created with Flask 2.1.3 and hosted on Python
 - CSS
 - JavaScript
 
-## Hosting
+### Hosting
 - [PythonAnywhere](https://pythonanywhere.com)
 
 ### repository - mysite
@@ -38,7 +39,7 @@ This is my latest personal website created with Flask 2.1.3 and hosted on Python
 This organizes a group of related views and other code. Views are registered with this blue print rather than directly with an application.
 
 ### zyambo/views/__init__.py
-- app_views = Blueprint("app_views", __name__, url_prefix="/")
+app_views = Blueprint("app_views", __name__, url_prefix="/")
 ## views
 |module | description| 
 |---------------------|-----------------|
@@ -48,19 +49,25 @@ This organizes a group of related views and other code. Views are registered wit
 | project.py |responds to 'GET, POST' requests sent to the "zyambo/about" route |
 
 ## Running project on local machine
-- clone this repo
+clone this repo
+
 $ git clone git@github.com:sangwani-coder/mysite.git
+
 $ cd mysite
 
 ## Install requirements
 $ pip3 install -r requirements.txt
 
-## Starting project
+#### Starting project
 open zyambo/app.py and uncomment the following code:
-# if __name__ == "__main__":
-#     app.jinja_env.auto_reload = True
-#     app.config['TEMPLATES_AUTO_RELOAD'] = True
-#     app.run(debug=True, host='0.0.0.0')
+
+ if __name__ == "__main__":
+
+     app.jinja_env.auto_reload = True
+
+     app.config['TEMPLATES_AUTO_RELOAD'] = True
+
+     app.run(debug=True, host='0.0.0.0')
 
 * then make sure you're inside the root of the project directory (mysite) and run:
 $ python3 -m zyambo.app
