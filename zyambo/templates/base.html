@@ -15,7 +15,7 @@
         <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/pz.ico') }}"/>
                <!-- js -->
         <script src="{{url_for('static', filename='js/script.js')}}"></script>
-        
+
     </head>
     <body onload="typeWriter();" class="home" id="container">
         <a class="nav-link" href="{{url_for('app_views.index')}}"><img src="{{url_for('static', filename='/img/pz.png')}}" alt="PZ-logo"></a>
@@ -24,11 +24,11 @@
             <p id="job">Software engineer</p>
         </div>
         <nav class="nav-color nav-menu">
-                <a class="active" href="{{url_for('app_views.index')}}">Home</a>
-                <a class="nav-link" href="{{url_for('app_views.projects')}}">My Projects</a>
-                <a class="nav-link" href="{{url_for('app_views.about')}}">About me</a>
-                <a class="nav-link" href="{{url_for('app_views.contact')}}">Contact me</a>
-                <!-- <a class="nav-link" href="{{url_for('app_views.api_route')}}">API</a> -->
+                <a class="active" href="{{url_for('app_views.index')}}">Home <span class="link-pipes active">|</span></a>
+                <a class="nav-link" href="{{url_for('app_views.projects')}}">My Projects <span class="link-pipes active">|</span></a>
+                <a class="nav-link" href="{{url_for('app_views.about')}}">About me <span class="link-pipes active">|</span></a>
+                <a class="nav-link" href="{{url_for('app_views.contact')}}">Contact me <span class="link-pipes active">|</span></a>
+                <!-- <a class="nav-link" href="{{url_for('app_views.api_route')}}">API<span class="link-pipes active">|</span></a> -->
         </nav>
         <hr>
         <section class="custom-section">

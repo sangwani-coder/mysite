@@ -1,14 +1,14 @@
 /* body */
-html, body {
+html {
     max-width: 100%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 body {
     background-color: black;
     min-height: 100vh;
     /* max-width: 400px; */
-    
+
 }
 
 
@@ -41,11 +41,32 @@ img {
     position: relative;
     top: 10px;
 }
+
+/* intro media query*/
+@media screen and (max-width: 700px){
+    img {
+        width: 50px;
+        left: 10px;
+    }
+    .intro {
+        left: 20px;
+    }
+    #name {
+        font-size: x-large;
+        top: 13px;
+    }
+    #job {
+        top: 0px;
+    }
+}
+
+
 /* nav style */
 nav {
+    position: relative;
     left: 980px;
     top: 1px;
-    
+
 }
 
 .active {
@@ -56,9 +77,24 @@ nav {
 .nav-link {
     color: white;
     font-size: large;
-    display: block;
-
 }
+
+.link-pipes {
+    display: visibility;
+}
+
+@media screen and (max-width: 1020px){
+    .nav-link {
+        display: block;
+    }
+    nav {
+        position: static;
+    }
+    .link-pipes {
+        display: none;
+    }
+}
+
 
 a:hover {
     color: bisque;
@@ -97,6 +133,7 @@ a {
     text-align: center;
 }
 #hover {
+    background-color: black;
     padding: 10px;
 }
 
@@ -110,6 +147,13 @@ a {
     background-color: black;
     border: 5px solid gray;
 }
+
+@media screen and (max-width: 700px){
+    #bio {
+        width: 300px;
+    }
+}
+
 
 .link-anchor {
     font-size: larger;
@@ -154,6 +198,12 @@ a {
     color: gray;
 }
 
+@media screen and (max-width: 700px){
+    .footer-section {
+        position: static;
+        text-align: center;
+    }
+}
 .home-projects {
     text-align: center;
 }
