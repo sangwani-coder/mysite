@@ -1,4 +1,8 @@
 /* body */
+html, body {
+    max-width: 100%;
+    overflow: hidden;
+}
 
 body {
     background-color: black;
@@ -7,9 +11,7 @@ body {
     
 }
 
-#container {
-    
-}
+
 
 /* logo img*/
 img {
@@ -41,7 +43,6 @@ img {
 }
 /* nav style */
 nav {
-    position: relative;
     left: 980px;
     top: 1px;
     
@@ -55,6 +56,8 @@ nav {
 .nav-link {
     color: white;
     font-size: large;
+    display: block;
+
 }
 
 a:hover {
@@ -72,11 +75,17 @@ a {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .about {
+    background-color: black;
+    border: 5px solid gray;
+    padding: 10px;
     font-size: medium;
     text-align: left;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .projects {
+    background-color: black;
+    border: 5px solid gray;
+    padding: 10px;
     font-size: medium;
     text-align: left;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -86,6 +95,9 @@ a {
     bottom: 30px;
     color: #ddd;
     text-align: center;
+}
+#hover {
+    padding: 10px;
 }
 
 #bio {
