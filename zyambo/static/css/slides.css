@@ -5,7 +5,7 @@
     background-size: 100% 65%;
     background-position: bottom;
 }
-/*
+
 .apology {
     /* Photo by <a href="https://unsplash.com/@sadmax?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Amber Kipp</a> on <a href="https://unsplash.com/s/photos/surprised-cat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
    */
@@ -13,14 +13,13 @@
     background-repeat: no-repeat;
     width: 500px;
     height: 500px;
-} */
+} 
 
 .cover {
     background-color: black;
     color: red;
 
 }
-
 
 #pz {
     color: white;

@@ -9,12 +9,12 @@ app.config["CACHE_TYPE"] = "null"
 
 
 @app.errorhandler(404)
-def not_found(error) -> str:
+def not_found(error: str) -> str:
     """ Page not found error"""
     return render_template('error.html', error=error), 404
 
 @app.errorhandler(401)
-def unauthorized(error) -> str:
+def unauthorized(error: str) -> str:
     """ unauthorized error"""
     return render_template('error.html', error=error), 401
 
