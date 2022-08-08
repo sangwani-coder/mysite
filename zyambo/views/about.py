@@ -6,4 +6,7 @@ from flask import jsonify, render_template
 def about() -> str:
     """ about route
     """
-    return render_template('about.html')
+    from zyambo.storage.db import DB
+    DB = DB()
+    about = DB.read_about()
+    return render_template('about.html', about=about)
