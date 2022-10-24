@@ -58,7 +58,21 @@ $ cd mysite
 ## Install requirements
 $ pip3 install -r requirements.txt
 
-#### Starting project
+## The Administrative console
+The shell can be used to interact with the database interactively.
+starting the shell..
+
+$ python3 -m zyambo console.py
+
+**Console commands**
+(sangwani) ? or help - lists the help information
+(sangwani) about - Displays the current about stored in the database.
+(sangwani) about <string:argument> adds a new about message to the database.
+(sangwani) project - add new project to database
+(sangwani) bio - add or display bio
+
+
+#### Starting project on local host
 open zyambo/app.py and uncomment the following code:
 
  if __name__ == "__main__":
