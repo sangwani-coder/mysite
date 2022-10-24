@@ -1,1 +1,1 @@
-I am a software engineering student at alx Africa specializing in backend engineering.
+"I build web and desktop apps that help schools deliver their services effectively."

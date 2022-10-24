@@ -1,7 +1,7 @@
 // type bio
 let i = 0;
-const bio = "I'm a software engineering student specializing in backend engineering.\
-I love to create fullstack web and desktop applications.\
+const bio = "I am a full-stack software developer.\
+I love to build software for schools.\
 In my spare time I study about Human Computer Interaction, Physics and History.\
 My life motto is AIM HIGH.";
 
