@@ -147,6 +147,10 @@ a {
     padding: 10px;
 }
 
+img:hover {
+    box-shadow: 0 0 4px 6px rgba(0, 140, 186, 0.5);
+  }
+
 #bio {
     font-size: medium;
     position: relative;

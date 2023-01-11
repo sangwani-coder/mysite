@@ -1,9 +1,12 @@
 // type bio
 let i = 0;
-const bio = "I am a full-stack software developer.\
-I love to build software for schools.\
-In my spare time I study about Human Computer Interaction, Physics and History.\
-My life motto is AIM HIGH.";
+const bio = "I have 3 years  experience in full-stack software development.\
+A strong experience with the following languages: \
+C, Python, Typescript/Nodejs, Java, Lua.\
+A solid background in Object-oriented programming (OOP). Experience with Docker.\
+Experience in algorithm design, data structures and writing unit tests. \
+Database engine knowledge. Knowledge with Web Sockets, REST APIs.\
+Cloud provider experience (AWS, Azure). Experience with development tools such as jira, git, bash.";
 
 const lang = 'Python, js, C, MySQL';
 const speed = 55;
