@@ -1,11 +1,14 @@
 {% extends "base.html" %}
+{% block title%}- Home{%endblock%}
 {% block content %}
 <div class="bio terminal">
-    <a href="{{url_for('app_views.about')}}" id="pz" class="link-anchor"><h2>Hello, I'm Peter Zyambo</h2></a>
+    <a href="{{url_for('app_views.about')}}" id="pz" class="link-anchor"><h2 style="color: orange">Hello, I'm Peter Zyambo</h2></a>
     <a href="{{url_for('app_views.about')}}"><p id="bio"></p></a>
 </div>
 <hr>
 <div class="home-projects">
-    <a href="{{url_for('app_views.projects')}}" class="link-anchor work blink-me">Checkout my projects -></a>
+    <!-- <a href="{{url_for('app_views.projects')}}" class="link-anchor work blink-me">Checkout my projects -></a> -->
+    <a href="{{url_for('app_views.contact')}}" class="btn btn-primary">Get Started</a>
+    <a href="{{url_for('app_views.about')}}" class="btn btn-primary">About Me</a>
 </div>
 {% endblock %}

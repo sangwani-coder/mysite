@@ -1,13 +1,11 @@
 // type bio
 let i = 0;
-const bio = "Passionate software engineer, martial arts enthusiast, and a dedicated music teacher.\
-My Tech Stack: \
-C, Python, Typescript/Nodejs, Java, Lua, JavaScript, REST APIs, Bash, SQL, OOP.\
-My Martial art styles: \
-Kung-fu, Kyokoshin Karate, Kickboxing, Capoeira.\
-My Music Instruments: \
-Piano, Trumpet, Guitar.\
-Certified Private Investigator";
+const bio = "I specialize in crafting custom software solutions that drive businesses forward.\
+With a deep passion for technology and a keen eye for detail, I have successfully delivered results for clients across various industries.\
+Are you ready to transform your ideas into powerful, user-friendly software solutions? Look no further.\
+Click the Get started button to request a free quote.";
+
+
 
 const lang = 'Python, js, C, MySQL';
 const speed = 55;

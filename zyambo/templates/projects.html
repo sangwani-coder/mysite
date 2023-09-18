@@ -1,5 +1,5 @@
 {% extends 'base.html'%}
-{% block title%}Projects{%endblock%}
+{% block title%} - Projects{%endblock%}
 {% block content%}
 <div class="terminal">
     <div class="projects">
@@ -8,6 +8,7 @@
         <h5 class="bio"><span class="p-name">&#10003; Project name: </span>Student Fees Management System (web app) || <span class="p-name">technologies used:</span> [Python, React, React-Bootstrap, Django-rest-framework, axio, Postgresql, Heroku]--><span class="project_links"> <a href="https://github.com/sangwani-coder/portfolio_project" class="github">Github</a> |</span><span class="project_links"> <a href="https://skoolpay-frontend.herokuapp.com/" class="live">live site</a> </span></h5>
         <h5 class="bio"><span class="p-name">&#10003; Project name: </span>Student Management System (desktop app) || <span class="p-name">technologies used:</span> [Python, PyQT5, sqlite3]--><span class="project_links"> <a href="https://github.com/sangwani-coder/School_management_system" class="github">Github</a> </span></h5>
     </div>
+    <a href="{{url_for('app_views.contact')}}" class="btn btn-primary">Get a Free Quote</a>
 </div>
 
 {% endblock%}

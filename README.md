@@ -84,6 +84,7 @@ open zyambo/app.py and uncomment the following code:
      app.run(debug=True, host='0.0.0.0')
 
 * then make sure you're inside the root of the project directory (mysite) and run:
-$ python3 -m zyambo.app
+
+    $ python3 -m zyambo.app
 
 Author: Peter S. Zyambo <Twitter: @peter_zyambo>

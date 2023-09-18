@@ -1,18 +1,11 @@
 {% extends 'base.html'%}
-{% block title%}Contact{%endblock%}
+{% block title%} - Contact{%endblock%}
 {% block content%}
 <div class="terminal">
-    <div class="bio tooltip" id="hover">Hover over me and see what I am available for...
-    <ul class="contact-cls tooltiptext">
-        <li>&#128187; Internship offers</li>
-        <li>&#128187; Job offers</li>
-        <li>&#128187; Freelance work</li>
-        <li>&#x1f30d; Networking </li>
-        <li>&#9749; Buy me a coffee &#x1F61C;</li>
-    </div>
-    <p>zyambopeter1@gmail.com <span id="pipe"> || </span><a class="resume" href="{{ url_for('static', filename='img/pz_cv.pdf') }}" download="peterzyambo" >Download my Resume</a> <span id="pipe"> || </span> +260-969-620-939</p>
-    <!-- <p>+260 965 604023 <span id="pipe"> || </span><a class="resume" href="{{ url_for('static', filename='img/lipila.pdf') }}" download="lipila-brochure" >brochure</a> <span id="pipe"> || </span> +260-965-604-023</p> -->
-    
+    <h6>Email: zyambopeter1@gmail.com</h6>
+    <h6>Call: +260-969-620-939</h6>
+    <h6>Address: 3808 Jacaranda Drive Buyantanshi Township, Kitwe, Zambia</h6>
+    <a href="{{url_for('app_views.contact')}}" class="btn btn-primary">Get a Free Quote</a>
 </div>
 
 

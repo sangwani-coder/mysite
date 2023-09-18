@@ -1,10 +1,11 @@
 {%extends 'base.html'%}
 
-{% block title%}Error!{%endblock%}
+{% block title%}- Error!{%endblock%}
 {%block content%}
-<div class="apology">
-    <h1 style="color: white;" class="error-title"> Error!</h1>
-    <h3 style="color: white;">{{error}}</h3>
-</div>
+<div class="terminal">
+    <div class="projects">
+        <p style="color: white;">{{error}}</p>
+    </div>
 
+</div>
 {% endblock%}

@@ -1,50 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>{%block title%}Peter Zyambo{%endblock%}</title>
-        <!-- meta info -->
-        <!-- <meta charset="UTF-8"> -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portfolio Website"/>
-        <meta name="author" content="Peter S. Zyambo"/>
-        <!-- stylesheet -->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"/>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/slides.css') }}"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-               <!-- icon -->
-        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/pz.ico') }}"/>
-               <!-- js -->
-        <script src="{{url_for('static', filename='js/script.js')}}"></script>
 
-    </head>
-    <body onload="typeWriter();" class="home" id="container">
-        <a class="nav-link" href="{{url_for('app_views.index')}}"><img class="logo-img" src="{{url_for('static', filename='/img/pz.png')}}" alt="PZ-logo"></a>
-        <div class="intro">
-            <h1 id="name">Peter Zyambo</h1>
-            <p id="job">Software engineer</p>
+<head>
+    <title>PZ {%block title%}{%endblock%}</title>
+    <!-- meta info -->
+    <!-- <meta charset="UTF-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Website" />
+    <meta name="author" content="Peter S. Zyambo" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slides.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- icon -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/pz.ico') }}" />
+    <!-- js -->
+
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+
+</head>
+
+<body onload="typeWriter();" class="home" id="container">
+    <a class="nav-link" href="{{url_for('app_views.index')}}"><img class="logo-img"
+            src="{{url_for('static', filename='/img/pz.png')}}" alt="PZ-logo"></a>
+    <div class="intro">
+        <h1 id="name">Peter Zyambo</h1>
+        <p id="job">Software engineer</p>
+    </div>
+    <!-- nav -->
+    <div>
+        <ul class="nav nav-tabs justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="{{url_for('app_views.index')}}">Home <span
+                        class="link-pipes active-pipe">|</span></a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('app_views.projects')}}">My Projects <span
+                        class="link-pipes active-pipe">|</span></a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('app_views.about')}}">About me <span
+                        class="link-pipes active-pipe">|</span></a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('app_views.contact')}}">Contact me <span
+                        class="link-pipes active-pipe">|</span></a>
+
+            </li>
+        </ul>
+    </div>
+    <section class="custom-section">
+        {% block content %}
+        {% endblock %}
+    </section>
+    <hr>
+    <section class="social-section">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/sangwani-pz" class="fa fa-linkedin fa-32x">
+            </a><span> </span> <a href="https://www.twitter.com/peter_zyambo" class="fa fa-twitter">
+            </a><span> </span><a href="https://www.github.com/sangwani-coder" class="fa fa-github"></a>
         </div>
-        <nav class="nav-color nav-menu">
-                <a class="active" href="{{url_for('app_views.index')}}">Home <span class="link-pipes active">|</span></a>
-                <a class="nav-link" href="{{url_for('app_views.projects')}}">My Projects <span class="link-pipes active">|</span></a>
-                <a class="nav-link" href="{{url_for('app_views.about')}}">About me <span class="link-pipes active">|</span></a>
-                <a class="nav-link" href="{{url_for('app_views.contact')}}">Contact me <span class="link-pipes active">|</span></a>
-        </nav>
-        <hr>
-        <section class="custom-section">
-            {% block content %}
-            {% endblock %}
-        </section>
-        <hr>
-        <section class="social-section">
-            <div class="social">
-                <a href="https://www.linkedin.com/in/sangwani-pz" class="fa fa-linkedin fa-32x">
-                </a><span> </span> <a href="https://www.twitter.com/peter_zyambo" class="fa fa-twitter">
-                </a><span>  </span><a href="https://www.github.com/sangwani-coder" class="fa fa-github"></a>
-            </div>
-        </section>
-        <section class="footer-section">
-            <!-- <footer> Copyright &copy 2022 Peter S. Zyambo.</footer> -->
-            <h3 class="tag "><span id="tag-dev">Designed and Developed by</span> <span class="tag-pz">Peter Zyambo</span></h3>
-        </section>
-    </body>
+    </section>
+    <section class="footer-section">
+        <!-- <footer> Copyright &copy 2022 Peter S. Zyambo.</footer> -->
+        <h3 class="tag "><span id="tag-dev">Designed and Developed by</span> <span class="tag-pz">Peter Zyambo</span>
+        </h3>
+    </section>
+</body>
+
 </html>
