@@ -7,5 +7,3 @@ def projects() -> str:
     """ projects route
     """
     return render_template('projects.html')
-
-

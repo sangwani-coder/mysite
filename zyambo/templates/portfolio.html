@@ -2,53 +2,67 @@
 {% block title%} - Portfolio{%endblock%}
 {% block content%}
 <div class="terminal">
-    <div class="projects">
-        <h1>Industries & Software Solutions</h2>
+    <div class="portfolio">
+        <h1>Industries & Software Solutions</h4>
 
-            <h2>Point of Sale (POS) Systems</h2>
+            <h4>Point of Sale (POS) Systems</h4>
 
-            <h3>1. Kids and Women Clothing Stores</h3>
+            <h5>1. Kids and Women Clothing Stores</h5>
             <p>
                 Designed and developed a specialized POS system tailored to the unique needs of kids and women clothing
-                retailers. This solution streamlined sales processes, inventory management, and customer interactions,
-                providing
-                a seamless shopping experience.
+                retailers. <br>This solution streamlined sales processes, inventory management, and customer interactions,
+                providing a seamless shopping experience.
             </p>
 
-            <h3>2. Butchery and Pharmacy Stores</h3>
+            <h5>2. Butchery and Pharmacy Stores</h5>
             <p>
                 Created custom POS software for both butchery and pharmacy businesses, optimizing transactions, tracking
-                inventory, managing sales, and ensuring compliance with industry regulations. These tailored solutions
-                enhanced
-                operational efficiency and customer service.
+                inventory, <br> managing sales, and ensuring compliance with industry regulations. These tailored solutions
+                enhanced operational efficiency and customer service.
             </p>
 
-            <h2>Student Management Systems</h2>
+            <h4>Student Management Systems</h4>
 
-            <h3>1. Web-Based Student Management System</h3>
+            <h5>1. Web-Based Student Management System</h5>
             <p>
                 Engineered a comprehensive web-based student management system for educational institutions. This
-                software
-                facilitated efficient student enrollment, attendance tracking, grade management, and communication
-                between
-                students, parents, and educators, ultimately improving academic administration.
+                software <br> facilitated efficient student enrollment, attendance tracking, grade management, and communication
+                between students, parents, and educators, ultimately improving academic administration.
             </p>
 
-            <h3>2. Desktop Student Management System</h3>
+            <h5>2. Desktop Student Management System</h5>
             <p>
                 Developed a robust desktop student management application, offering similar functionalities to the
-                web-based
-                system. This tailored solution allowed educational institutions to manage student data, academic
-                progress, and
-                administrative tasks efficiently within their local environment.
+                web-based system. <br> This tailored solution allowed educational institutions to manage student data, academic
+                progress, and administrative tasks efficiently within their local environment.
             </p>
 
-            These are just a few examples of the industries and software solutions I've had the privilege to work on.
-            Each project was carefully crafted to meet the unique needs and requirements of the respective industries,
-            providing valuable tools to enhance productivity and operations. Feel free to reach out to discuss how I can tailor
-            software solutions for your specific industry.
-    </div>
-    <a href="{{url_for('app_views.contact')}}" class="btn btn-primary">Get a Free Quote</a>
-</div>
+            <h4>Fraud and Forensic Investigation Software</h4>
+            <h5>1. NGO Fraud Detection & Prevention Tool</h5>
+            <p>
+                Designed a web-based software solution to assist NGOs in detecting and preventing fraud. This tool
+                employs advanced analytics, data monitoring, and reporting capabilities to safeguard funds, ensuring that
+                resources
+                are directed toward their intended humanitarian purposes.
+            </p>
+            <h5>2. Mining Company Forensic Investigation Software</h5>
+            <p>
+                Collaborated with mining companies to develop a forensic investigation software platform. This solution
+                utilizes data analysis, audit trails, and compliance checks to uncover and address irregularities,
+                enhancing
+                transparency and accountability in the mining sector.
+            </p>
 
-{% endblock%}
+            <p>
+                These are examples of the diverse industries and software solutions I've had the privilege to work on.
+                Each
+                project was tailored to address specific industry challenges, whether it's enhancing business
+                operations,
+                improving education management, or combating fraud and forensic issues. Please don't hesitate to reach
+                out
+                to discuss how I can customize software solutions to meet your unique needs and objectives.
+            </p>
+            <a href="{{url_for('app_views.contact')}}" class="btn btn-primary">Get a Free Quote</a>
+    </div>
+
+    {% endblock%}

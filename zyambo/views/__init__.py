@@ -9,4 +9,5 @@ from zyambo.views.about import *
 from zyambo.views.contact import *
 from zyambo.views.index import *
 from zyambo.views.project import *
+from zyambo.views.portfolio import *
 from zyambo.views.lipila import *
