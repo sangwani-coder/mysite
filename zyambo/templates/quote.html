@@ -1,0 +1,41 @@
+{% extends 'base.html'%}
+{% block title%} - Project Price Estimation{%endblock%}
+{% block content%}
+<div class="terminal">
+    <h2>Project Price Estimation</h2>
+    <div class="terminal-one">
+        <p>Select the type of Content and Application you need.</p>
+        <!-- <ul>
+            <li style="list-style-type: none;">Basic Content:</li>
+            <li style="list-style-type: none;">Premium Content:</li>
+        </ul> -->
+        <form id="estimation-form">
+            <label for="content">Select Content:</label>
+            <select id="content" name="content">
+                <option value="basic">Basic Content</option>
+                <option value="premium">Premium Content</option>
+            </select>
+
+            <label for="app-type">Select App Type:</label>
+            <select id="app-type" name="app-type">
+                <option value="web">Web App</option>
+                <option value="desktop">Desktop</option>
+                <option value="mobile-ios">Mobile App (iOS)</option>
+                <option value="mobile-android">Mobile App (Android)</option>
+                <!-- <option value="mobile-both">Mobile App (iOS & Android)</option> -->
+            </select>
+
+            <label for="discount">Apply Discount (in %):</label>
+            <input type="number" id="discount" name="discount" min="60" max="60">
+
+            <button type="button" onclick="calculatePrice()">Calculate Price</button>
+
+            <div id="result">
+                <h2>Estimated Price:</h2>
+                <h3 id="price">K0.00</h3>
+            </div>
+        </form>
+
+    </div>
+</div>
+{% endblock %}
