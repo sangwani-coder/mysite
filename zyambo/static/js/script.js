@@ -46,10 +46,10 @@ function calculatePrice() {
   // Perform price calculation based on your criteria
   // Replace the following with your own pricing logic
   let baseHours = 25
-  let basePrice = 250; // current base price
+  let basePrice = 265; // current base price
 
   if (content === "premium") {
-    baseHours *= 10; // Additional cost for premium content
+    baseHours *= 8; // Additional cost for premium content
   }
 
   if (appType === "mobile-ios") {
@@ -65,10 +65,10 @@ function calculatePrice() {
   }
 
   // Calculate the final price with the discount
-  let finalPrice = basePrice;
+  let finalPrice = baseHours * basePrice;
 
   if (!isNaN(discount) && discount > 0) {
-    finalPrice = basePrice - (basePrice * discount / 100);
+    finalPrice = finalPrice - (finalPrice * discount / 100);
   }
 
   var formattedNumber = finalPrice.toLocaleString();
