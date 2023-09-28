@@ -5,9 +5,14 @@
     <title>PZ {%block title%}{%endblock%}</title>
     <!-- meta info -->
     <!-- <meta charset="UTF-8"> -->
+    <meta title="Experienced Software Engineer Zambia">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Software Engineer" />
-    <meta name="author" content="Peter S. Zyambo" />
+    <meta name="description"
+        content="I'm a freelance software developer in Zambia with expertise in a wide range of technologies. Contact me today to discuss your project requirements.">
+    <meta name="author" content="Peter Zyambo">
+    <meta name="keywords"
+        content="Web design, Website design , Website builder, Web developer, ecommerce website, Web design company in Zambia, Software development company">
+    <meta http-equiv="refresh" content="120">
     <!-- stylesheet -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -17,6 +22,15 @@
     <!-- icon -->
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/pz.ico') }}" />
     <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
     <script src="{{url_for('static', filename='js/script.js')}}"></script>
 
@@ -24,46 +38,64 @@
 
 <body onload="typeWriter();" class="home" id="container">
     <a class="nav-link" href="{{url_for('app_views.index')}}"><img class="logo-img"
-            src="{{url_for('static', filename='/img/pz.png')}}" alt="PZ-logo"></a>
+            src="{{url_for('static', filename='/img/pz.png')}}" alt="zyambo'a logo"></a>
     <div class="intro">
         <h1 id="name">Peter Zyambo</h1>
         <p id="job">Software engineer</p>
     </div>
-    <!-- nav -->
-    <div class="topnav" id="myTopnav">
-        <ul class="nav nav-tabs justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link active" href="{{url_for('app_views.index')}}">Home <span
-                        class="link-pipes active-pipe">|</span></a>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="nav-brand" href="{{url_for('app_views.index')}}"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{url_for('app_views.index')}}">Home </a>
 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('app_views.portfolio')}}">Industries</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('app_views.projects')}}">My Projects </a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('app_views.about')}}">About me </a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('app_views.contact')}}">Contact me </a>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{url_for('app_views.portfolio')}}">Industries <span
-                        class="link-pipes active-pipe">|</span></a>
-
+              <a class="nav-link" href="#">Features</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{url_for('app_views.projects')}}">My Projects <span
-                        class="link-pipes active-pipe">|</span></a>
-
+              <a class="nav-link" href="#">Pricing</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{url_for('app_views.about')}}">About me <span
-                        class="link-pipes active-pipe">|</span></a>
-
+              <a class="nav-link disabled" href="#">Disabled</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{url_for('app_views.contact')}}">Contact me <span
-                        class="link-pipes active-pipe">|</span></a>
-
-            </li>
-            <li class="nav-item icon">
-                <a href="javascript:void(0);" class="" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                  </a>
-            </li>
-        </ul>
-    </div>
+          </ul>
+        </div>
+      </nav> -->
     <section class="custom-section">
         {% block content %}
         {% endblock %}

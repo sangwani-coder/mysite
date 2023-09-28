@@ -56,11 +56,6 @@
     text-align: center;
 }
 
-#pipe {
-    color: green;
-    font-size: large;
-}
-
 .tooltip {
     position: relative;
     display: inline-block;
