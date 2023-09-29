@@ -45,23 +45,23 @@ function calculatePrice() {
 
   // Perform price calculation based on your criteria
   // Replace the following with your own pricing logic
-  let baseHours = 25
-  let basePrice = 265; // current base price
+  let baseHours = 20
+  let basePrice = 200; // current base price
 
   if (content === "premium") {
-    baseHours *= 8; // Additional cost for premium content
+    baseHours *= 7; // Additional cost for premium content
   }
 
   if (appType === "mobile-ios") {
-    basePrice += 350; // Additional cost for an iOS mobile app
+    basePrice += 250; // Additional cost for an iOS mobile app
   }
   
   if (appType === "mobile-android") {
-    basePrice += 250; // Additional cost for an android mobile app
+    basePrice += 200; // Additional cost for an android mobile app
   }
   
   if (appType === "desktop") {
-    basePrice += 300; // Additional cost for a desktop app
+    basePrice += 200; // Additional cost for a desktop app
   }
 
   // Calculate the final price with the discount

@@ -2,80 +2,85 @@
 {% block title%} - About{%endblock%}
 {% block content%}
 <div class="terminal">
-    <div class=" about" style="text-align: center;">
-        <h1 style="color: orange">About me</h1>
-        <p>
-            Hello! I'm Peter Zyambo, a passionate software engineer, martial arts enthusiast, and a dedicated music
-            teacher.<br> My journey as a software engineer has allowed me to combine my love for problem-solving and
-            creativity.
-            <br> I thrive on turning ideas into functional and elegant solutions, leveraging the power of technology to
-            bring
-            visions to life.
-        </p>
+    <h1 style="color: orange">About me</h1>
+    <div class="container about">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{url_for('static', filename='/img/pz-about.png')}}" class="float-md-end image-wrap" alt="zyambo img">
+            </div>
+            <div class="col-md-6 text-wrap">
+                <p>
+                    Hello! I'm Peter Zyambo, a passionate software engineer, martial arts enthusiast, and a dedicated
+                    music teacher. My journey as a software engineer has allowed me to combine my love for
+                    problem-solving
+                    and creativity. <br><br> I thrive on turning ideas into functional and elegant solutions, leveraging
+                    the power of
+                    technology to bring visions to life.
 
-        </p>
-        Beyond coding, I find balance through martial arts, where I've been coaching for more than 10 years. <br>
-        Martial arts teach discipline, perseverance, and the art of continuous improvement—values that resonate
-        both in my coding and teaching.<br> Music also holds a special place in my heart. I'm not only a passionate
-        pianist, guitarist, and trumpeter but also a music instructor. <br> Teaching music allows me to share the
-        joy of creative expression with others.<br>
-        <p>
-        <p>
-            In my free time, you'll find me with a good book in hand, diving into various subjects to expand my
-            horizons.<br> I believe that continuous learning is at the core of personal and professional growth.<br>
+                    Beyond coding, I find balance through martial arts, where I've been coaching for more than 10 years.
+                    <br>
+                    <br>
+                    Martial arts teach discipline, perseverance, and the art of continuous improvement—values that
+                    resonate both in my coding and teaching.<br> Music also holds a special place in my heart. I'm not
+                    only a
+                    passionate pianist, guitarist, and trumpeter but also a music instructor. Teaching music allows me
+                    to
+                    share the joy of creative expression with others.<br><br>
 
-            As a freelance developer, I'm committed to turning your software dreams into reality. Whether it's crafting
-            <br> user-friendly apps for web , mobile and desktop or building robust backend systems, I'm here to make
-            your
-            digital vision a success.
-        </p>
+                    In my free time, you'll find me with a good book in hand, diving into various subjects to expand my
+                    horizons. I believe that continuous learning is at the core of personal and professional
+                    growth.<br><br>
 
-        <h2> Why Choose Me? </h2>
-        <p> With over 5 years of experience in software development, <br> I've honed my skills as a full stack developer
-            while specializing in backend engineering, creating seamless digital experiences and robust systems.<br>
-            I specialize in crafting custom solutions that solve real-world problems. I don't just write code; I
-            architect digital solutions that empower your business to excel.
-        </p>
+                    As a freelance developer, I'm committed to turning your software dreams into reality. Whether it's
+                    crafting user-friendly apps for web , mobile and desktop or building robust backend systems, I'm
+                    here to
+                    make your digital vision a success.
 
-        <h2>How I Can Help You</h2>
-        <p>My passion lies in understanding your unique challenges and objectives.<br> I work closely with you to
-            develop
-            software that not only meets your immediate needs but also aligns with your long-term goals.<br>
-            Whether you're seeking a web application, mobile app, desktop app or a robust backend system, I'm here to
-            make it
-            happen.
-        </p>
-        <h2>What Sets Me Apart</h2>
-        <p>
-            <strong> Quality:</strong>I'm committed to delivering reliable, secure, and scalable solutions that stand
-            the test of time.
 
-        </p>
-        <p>
-            <strong>Expertise:</strong> I'm a full stack developer with a specialization in backend engineering,
-            ensuring every aspect of your project is in capable hands.
-        </p>
+                <h2> Why Choose Me? </h2>
+                With over 5 years of experience in software development, I've honed my skills as a
+                full stack developer while specializing in backend engineering, creating seamless digital experiences
+                and robust
+                systems.<br>
+                I specialize in crafting custom solutions that solve real-world problems. I don't just write code; I
+                architect digital solutions that empower your business to excel.
 
-        <p>
-            <strong> Collaboration:</strong>Your input is invaluable, and I wholeheartedly embrace a collaborative
-            approach.
-            I work closely with you to ensure your vision becomes reality. <br>
-            Additionally, I actively engage with a network of skilled developers to enhance the quality and
-            effectiveness <br>
-            of your projects. I'm not just a freelancer; I'm a dedicated collaborator committed to delivering
-            exceptional software solutions.
-        </p>
-        <h2>Let's Get Your Cost Estimate</h2>
-        <p>
-            Ready to embark on your software journey?<br>
-            Whether you're a startup with a groundbreaking idea or an established business looking to innovate,<br>
-            I'm here to guide you through the process. Let's turn your digital dreams into tangible success stories.<br>
 
-            I look forward to working with you and bringing your software aspirations to life.<br>
-        </p>
+                <h2>How I Can Help You</h2>
+                My passion lies in understanding your unique challenges and objectives.<br> I work closely
+                with you to develop software that not only meets your immediate needs but also aligns with your
+                long-term goals.<br>
+                Whether you're seeking a web application, mobile app, desktop app or a robust backend system, I'm
+                here to make it happen.
 
-        <a href="{{url_for('app_views.quote')}}" class="btn btn-primary">Get Your Cost Estimate</a>
+                <h2>What Sets Me Apart</h2>
+                <ul>
+                    <li><strong> Quality:</strong> I'm committed to delivering reliable, secure, and scalable solutions
+                        that stand the test of time.</li>
+                    <li><strong>Expertise:</strong> I'm a full stack developer with a specialization in backend
+                        engineering, ensuring every aspect of your project is in capable hands.</li>
+                    <li><strong> Collaboration:</strong> Your input is invaluable, and I wholeheartedly embrace a
+                        collaborative approach. I work closely with you to ensure your vision becomes reality.
+                        Additionally, I actively engage with a network of skilled developers to enhance the quality and
+                        effectiveness of your projects. I'm not just a freelancer; I'm a dedicated collaborator committed to
+                        delivering  exceptional software solutions.</li>
+                </ul>
+
+                <h2>Let's Get Your Cost Estimate</h2>
+
+                Ready to embark on your software journey?<br>
+                Whether you're a startup with a groundbreaking idea or an established business looking to
+                innovate, I'm here to guide you through the process. Let's turn your digital dreams into tangible success
+                stories. I look forward to working with you and bringing your software aspirations to life.
+                </p>
+            </div>
+        </div>
+        <div class="" style="text-align: center;">
+            <a href="{{url_for('app_views.quote')}}" class="btn btn-primary">Get Your Cost Estimate</a>
+        </div>
     </div>
+
+
 </div>
 
 {% endblock%}
