@@ -18,6 +18,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/slides.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/more-styles.css') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- icon -->
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/pz.ico') }}" />
@@ -41,7 +42,7 @@
             src="{{url_for('static', filename='/img/pz.png')}}" alt="zyambo'a logo"></a>
     <div class="intro">
         <h1 id="name">Peter Zyambo</h1>
-        <p id="job">Software engineer</p>
+        <p id="job">Polymath</p>
     </div>
     <nav class="navbar navbar-expand-md navbar-light" style="background-color:#e3f2fd;">
         <a class="nav-brand" href="{{url_for('app_views.index')}}"></a>
@@ -56,8 +57,7 @@
 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url_for('app_views.portfolio')}}">Industries</a>
-
+                    <a class="nav-link" href="{{url_for('app_views.portfolio')}}">Freelancing</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{url_for('app_views.projects')}}">My Projects </a>

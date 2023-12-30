@@ -76,3 +76,11 @@ function calculatePrice() {
   // Display the result
   document.getElementById("price").textContent = `K${formattedNumber}`;
 }
+
+const paragraphs = document.querySelectorAll('.text-wrap p:not(:first-child)');
+paragraphs.forEach(paragraph => {
+  const heading = paragraph.previousElementSibling;
+  heading.addEventListener('click', () => {
+    paragraph.style.display = paragraph.style.display === 'none' ? 'block' : 'none';
+  });
+});

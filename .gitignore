@@ -4,3 +4,4 @@ Pipfile.lock
 mock/
 *.cpython*
 .venv
+.env
