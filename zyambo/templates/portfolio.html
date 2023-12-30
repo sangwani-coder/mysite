@@ -1,74 +1,51 @@
 {% extends 'base.html'%}
-{% block title%} - Portfolio{%endblock%}
+{% block title%} - Freelancing{%endblock%}
 {% block content%}
 <div class="terminal">
-    <h2>Industries & Software Solutions</h2>
-
-        <div class="terminal-one">
-
-            <h4>Point of Sale (POS) Systems</h4>
-
-            <h5>1. Kids and Women Clothing Stores</h5>
-            <p>
-                Designed and developed a specialized POS system tailored to the unique needs of kids and women clothing
-                retailers. <br>This solution streamlined sales processes, inventory management, and customer
-                interactions,
-                providing a seamless shopping experience.
-            </p>
-
-            <h5>2. Butchery and Pharmacy Stores</h5>
-            <p>
-                Created custom POS software for both butchery and pharmacy businesses, optimizing transactions, tracking
-                inventory, <br> managing sales, and ensuring compliance with industry regulations. These tailored
-                solutions
-                enhanced operational efficiency and customer service.
-            </p>
-
-            <h4>Student Management Systems</h4>
-
-            <h5>1. Web-Based Student Management System</h5>
-            <p>
-                Engineered a comprehensive web-based student management system for educational institutions. This
-                software <br> facilitated efficient student enrollment, attendance tracking, grade management, and
-                communication
-                between students, parents, and educators, ultimately improving academic administration.
-            </p>
-
-            <h5>2. Desktop Student Management System</h5>
-            <p>
-                Developed a robust desktop student management application, offering similar functionalities to the
-                web-based system. <br> This tailored solution allowed educational institutions to manage student data,
-                academic
-                progress, and administrative tasks efficiently within their local environment.
-            </p>
-
-            <h4>Fraud and Forensic Investigation Software</h4>
-            <h5>1. NGO Fraud Detection & Prevention Tool</h5>
-            <p>
-                Designed a web-based software solution to assist NGOs in detecting and preventing fraud. This tool
-                employs advanced analytics, data monitoring, and reporting capabilities to safeguard funds, ensuring
-                that
-                resources
-                are directed toward their intended humanitarian purposes.
-            </p>
-            <h5>2. Mining Company Forensic Investigation Software</h5>
-            <p>
-                Collaborated with mining companies to develop a forensic investigation software platform. This solution
-                utilizes data analysis, audit trails, and compliance checks to uncover and address irregularities,
-                enhancing
-                transparency and accountability in the mining sector.
-            </p>
-
-            <p>
-                These are examples of the diverse industries and software solutions I've had the privilege to work on.
-                Each
-                project was tailored to address specific industry challenges, whether it's enhancing business
-                operations,
-                improving education management, or combating fraud and forensic issues. Please don't hesitate to reach
-                out
-                to discuss how I can customize software solutions to meet your unique needs and objectives.
-            </p>
-            <a href="{{url_for('app_views.quote')}}" class="btn btn-primary">Get Your Cost Estimate</a>
+    <div class="container freelancing-page">
+        <h1 style="color: orange">Freelancing Services</h1>
+        <div class="row">
+            <div class="col-md-4 text-wrap">
+                <h2>Music Performance</h2>
+                <h6>From stately halls to intimate gatherings, I bring the magic of music to every occasion. My
+                    experience includes:</h6>
+                <ul>
+                    <li>Performing at state and corporate functions</li>
+                    <li>Adding soulful melodies to weddings and special events</li>
+                    <li>Teaching private music lessons to nurture budding musicians</li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-wrap">
+                <h2>Private Investigations</h2>
+                <h6>Unraveling the truth is my forte. I offer discreet and professional investigative services for:</h6>
+                <ul>
+                    <li>Corporate clients seeking to protect their assets and interests</li>
+                    <li>Individuals navigating sensitive personal matters</li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-wrap">
+                <h2>Martial Arts Instruction</h2>
+                <h6>Discipline, focus, and self-defense skills for everyone. I offer:</h6>
+                <ul>
+                    <li>Martial arts training for both kids and adults</li>
+                    <li>Self-defense instruction for personal safety and empowerment</li>
+                    <li>Customized programs tailored to individual needs and goals</li>
+                </ul>
+            </div>
         </div>
-
-        {% endblock%}
+        <div class="row">
+            <div class="col-md-6 text-wrap">
+                <h2>Software Development</h2>
+                <h6>I craft elegant and functional software solutions that empower businesses and individuals. My
+                    expertise spans:</h6>
+                <ul>
+                    <li>Web development across various platforms</li>
+                    <li>Mobile app development for seamless user experiences</li>
+                    <li>Desktop application development tailored to specific needs</li>
+                </ul>
+            </div>
+        </div>
+        <h6 class="call-to-action">Ready to collaborate? <a href="{{url_for('app_views.contact')}}"
+                class="btn btn-primary">Contact Me</a> me today to discuss your project needs.</h6>
+    </div>
+    {% endblock%}
