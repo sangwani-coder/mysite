@@ -1,9 +1,6 @@
 // type bio
 let i = 0;
-const bio = "I specialize in crafting custom software solutions that drive businesses forward.\
-With a deep passion for technology and a keen eye for detail, I have successfully delivered results for clients across various industries.\
-Are you ready to transform your ideas into powerful, user-friendly software solutions? Look no further.\
-Click the Get Your Cost Estimate button to request a free quote.";
+const bio = "My life is a symphony of technology and music, blending code and chords in pursuit of dreams.As a software architect, I weave intricate solutions for businesses, bringing their visions to life with pixel - perfect precision.My passion for technology, fueled by a lifetime dream of teaching music, pushes me to bridge the gap between logic and creativity. In January 2024, I'll embark on a thrilling new chapter as a full-time music teacher, sharing the joy of harmony with budding musicians.";
 
 
 
@@ -55,11 +52,11 @@ function calculatePrice() {
   if (appType === "mobile-ios") {
     basePrice += 250; // Additional cost for an iOS mobile app
   }
-  
+
   if (appType === "mobile-android") {
     basePrice += 200; // Additional cost for an android mobile app
   }
-  
+
   if (appType === "desktop") {
     basePrice += 200; // Additional cost for a desktop app
   }
