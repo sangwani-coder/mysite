@@ -21,6 +21,11 @@ h5 {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.job-head {
+    color: orange;
+    font-weight: bold;
+}
+
 /* logo img*/
 .logo-img {
     position: relative;
@@ -81,6 +86,11 @@ h5 {
     }
 }
 
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.1);
+}
 
 .active-pipe {
     color: green;
@@ -88,7 +98,10 @@ h5 {
 }
 
 a:hover {
-    color: bisque;
+    color: bisque
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 2px;
 }
 
 /* remove anchore underlines */
