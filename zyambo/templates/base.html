@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>PZ {%block title%}{%endblock%}</title>
+    <title>{%block title%}{%endblock%}</title>
     <!-- meta info -->
     <!-- <meta charset="UTF-8"> -->
-    <meta title="Experienced Software Engineer Zambia">
+    <meta charset="UTF-8">
+    <meta title="Peter Sangwani Zyambo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="I'm a freelance software developer in Zambia with expertise in a wide range of technologies. Contact me today to discuss your project requirements.">
-    <meta name="author" content="Peter Zyambo">
+        content="PZ Founder & CEO Lipila Technologies Limited">
+    <meta name="author" content="Peter Sangwani Zyambo">
     <meta name="keywords"
-        content="Web design, Website design , Website builder, Web developer, ecommerce website, Web design company in Zambia, Software development company">
-    <meta http-equiv="refresh" content="120">
+        content="Software Engineer, Pianist, Martial Artist, Polymath, Founder, Entrepreneur">
     <!-- stylesheet -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -44,8 +43,8 @@
         <h1 id="name">Peter Zyambo</h1>
         <p id="job">Polymath</p>
     </div>
-    <nav class="navbar navbar-expand-md navbar-light" style="background-color:#e3f2fd;">
-        <a class="nav-brand" href="{{url_for('app_views.index')}}"></a>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <a class="nav-brand" href="{{url_for('app_views.index')}}"><span class="bio-txt">pz</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -57,14 +56,14 @@
 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url_for('app_views.portfolio')}}">Freelancing</a>
+                    <a class="nav-link" href="{{url_for('app_views.portfolio')}}">Interests</a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link" href="{{url_for('app_views.projects')}}">Software Projects </a>
 
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url_for('app_views.about')}}">About me </a>
+                    <a class="nav-link" href="{{url_for('app_views.about')}}">Professional Work</a>
 
                 </li>
                 <li class="nav-item">
@@ -74,28 +73,6 @@
             </ul>
         </div>
     </nav>
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-        </div>
-      </nav> -->
     <section class="custom-section">
         {% block content %}
         {% endblock %}
@@ -103,9 +80,9 @@
     <hr>
     <section class="social-section">
         <div class="social">
-            <a href="https://www.linkedin.com/in/sangwani-pz" class="fa fa-linkedin fa-32x">
-            </a><span> </span> <a href="https://www.twitter.com/peter_zyambo" class="fa fa-twitter">
-            </a><span> </span><a href="https://www.github.com/sangwani-coder" class="fa fa-github"></a>
+            <a href="https://www.linkedin.com/in/sangwani-pz" class="fa fa-linkedin fa-32x">linkedin</a><span> </span>
+            <a href="https://www.twitter.com/peter_zyambo" class="fa fa-twitter">twitter</a><span> </span>
+            <a href="https://www.github.com/sangwani-coder" class="fa fa-github">github</a>
         </div>
     </section>
     <section class="footer-section">

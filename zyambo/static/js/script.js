@@ -1,6 +1,6 @@
 // type bio
 let i = 0;
-const bio = "My life is a symphony of technology and music, blending code and chords in pursuit of dreams.As a software architect, I weave intricate solutions for businesses, bringing their visions to life with pixel - perfect precision.My passion for technology, fueled by a lifetime dream of performing music, pushes me to bridge the gap between logic and creativity.";
+const bio = "Founder & CEO Lipila Technologies Limited.";
 
 
 

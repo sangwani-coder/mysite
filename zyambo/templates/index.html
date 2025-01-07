@@ -1,14 +1,14 @@
 {% extends "base.html" %}
-{% block title%}- Home{%endblock%}
+{% block title%} Zyambo Portfolio Summary {%endblock%}
 {% block content %}
 <div class="bio terminal">
-    <a href="{{url_for('app_views.about')}}" id="pz" class="link-anchor"><h2 style="color: orange">Hello, I'm Peter Zyambo</h2></a>
-    <a href="{{url_for('app_views.about')}}" class="zoom"><p id="bio"></p></a>
+    <a href="{{url_for('app_views.about')}}" id="pz" class="link-anchor"><h2 class="heading">Hello, I'm Peter Zyambo</h2></a>
+    <a href="{{url_for('app_views.about')}}" class="zoom"><p id="bio"></p><span class="bio-txt">bio</span></a>
 </div>
 <hr>
 <div class="home-projects">
     <!-- <a href="{{url_for('app_views.projects')}}" class="link-anchor work blink-me">Checkout my projects -></a> -->
     <!-- <a href="{{url_for('app_views.quote')}}" class="btn btn-primary">Get Your Cost Estimate</a> -->
-    <a href="{{url_for('app_views.about')}}" class="btn btn-primary">About Me</a>
+    <a href="{{url_for('app_views.about')}}" class="btn btn-primary">Read More</a>
 </div>
 {% endblock %}

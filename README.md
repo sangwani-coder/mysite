@@ -1,14 +1,5 @@
-# mysite  August 8 2022
-This is my latest personal website created with Flask 2.1.3 and hosted on PythonAnywhere.
-<img src="https://github.com/sangwani-coder/mysite/blob/main/img/mysite.png">
-
-[visit live site](https://zyambo.pythonanywhere.com)
-## Technologies used
-- Python 3.9
-- Flask 2.1.3
-- HTML
-- CSS
-- JavaScript
+# mysite  January 7 2025
+This is my latest portfolio website created with Flask 2.1.3 and hosted on PythonAnywhere.
 
 ### Hosting
 - [PythonAnywhere](https://pythonanywhere.com)
@@ -87,4 +78,4 @@ open zyambo/app.py and uncomment the following code:
 
     $ python3 -m zyambo.app
 
-Author: Peter S. Zyambo <Twitter: @peter_zyambo>
+Author: Peter S. Zyambo <Email: zyambo@lipila.tech>

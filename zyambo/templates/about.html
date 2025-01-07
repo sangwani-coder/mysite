@@ -1,8 +1,8 @@
 {% extends 'base.html'%}
-{% block title%} - About{%endblock%}
+{% block title%} Zyambo Professional Work{%endblock%}
 {% block content%}
 <div class="terminal">
-    <h1 style="color: orange">About me</h1>
+    <h1 class="heading">Professional Work</h1>
     <audio controls autoplay>
     <source src="{{url_for('static', filename='/music/Beethoven.ogg')}}" type="audio/ogg">
     <source src="{{url_for('static', filename='/music/Beethoven.mp3')}}" type="audio/mpeg">
@@ -13,86 +13,15 @@
                 <img src="{{url_for('static', filename='/img/pz-about.png')}}" class="float-md-end image-wrap"
                     alt="zyambo img">
             </div>
-            <div class="col-md-6 text-wrap">
-                <h2 class="engineer"> &#9745; Software Engineer</h2>
-                <p>
-                    My fascination with technology started in childhood, tinkering with gadgets and dreaming of worlds
-                    built from code. This ignited a passion for learning programming, and soon I was engrossed in the
-                    intricacies of algorithms and the magic of building digital worlds. This passion eventually
-                    blossomed into a career as a software engineer, where I've spent {{dates.eng_year}} years honing my
-                    skills.
-
-                    Today, I specialize in crafting elegant and functional solutions across web, mobile, and desktop
-                    platforms. But my drive goes beyond just lines of code. I thrive on turning ideas into reality,
-                    leveraging technology not just to empower businesses, but also to build a brighter future for
-                    Africa. I'm particularly interested in game development, where I see the potential to engage,
-                    educate, and inspire. And as Artificial Intelligence continues to evolve, I'm excited about its
-                    potential to solve complex problems and make a real impact on the continent.
-
-                    My journey isn't just about lines of code; it's about using technology as a tool for positive
-                    change. I'm a passionate advocate for building Africa's future through innovation, and I believe
-                    that every line of code I write has the potential to make a difference.
-                </p>
-
-                <h2 class="musician"> &#9745; Musician (Pianist, Trumpeter)</h2>
-                <p>
-                    My journey through music is a vibrant tapestry woven with threads of
-                    Beethoven's virtuosity, Lil Wayne's lyrical grit, and the
-                    improvisational spirit of jazz. For over {{dates.mus_year}} years, I've been a musical
-                    chameleon, my fingers dancing across the keys of piano, guitar, and
-                    trumpet, composing ballads that echo Beethoven's moonlight, crafting
-                    hip-hop tracks that pulse with Lil Wayne's swagger, and letting jazz riffs
-                    guide me into the unknown. Sharing this musical odyssey is my lifeblood.
-                    Whether it's nurturing the musical seed in students or producing music
-                    that transcends borders, my greatest joy lies in the shared language of
-                    music, where Beethoven's whispers mingle with Lil Wayne's shouts and jazz
-                    breaks into rock anthems.
-                </p>
-                <h2 class="martial-artist"> &#9745; Martial Artist</h2>
-                <p>
-                    For over {{dates.coach}} years, I've been a dedicated martial arts Instructor and a dedicated
-                    practitioner of several styles for {{dates.mat_year}} years now. The mental muscle built through
-                    martial arts - unwavering discipline,tenacious perseverance, and the commitment to
-                    constant improvement - has become my life's operating
-                    system, powering my success in programming, teaching, and beyond.
-                </p>
-                <h2 class="pi"> &#9745; Private Investigator</h2>
-                <p>
-                    My childhood was a tapestry woven with whispered secrets and thrilling escapes, fueled by the
-                    shadows cast in classic detective novels and the flickering silver screen. Sherlock
-                    Holmes, Sam Spade, Veronica Mars - these were my heroes, their cunning minds and unwavering resolve
-                    igniting a fire within me. Little did I know, those embers would one day become the inferno of my
-                    own life, the life of a private investigator.
-
-                    In 2014, I didn't just earn a diploma, I grasped the reins of a lifelong dream. Since then, my
-                    office has been a canvas painted with cases from around the globe. From missing persons in bustling
-                    metropolises to fraudulent schemes spun in sun-drenched islands, I've navigated the labyrinthine
-                    paths of truth, uncovering hidden agendas and unveiling tangled webs of deceit.
-
-                    Whether it's navigating the emotional turmoil of infidelity investigations, piecing together the
-                    fragments of a cold case, or safeguarding precious assets with keen security expertise, every
-                    challenge is a puzzle begging to be solved. The thrill of the chase, the satisfaction of untangling
-                    a knot of deception, and the quiet triumph of bringing closure to my clients - these are the rewards
-                    that fuel my passion.
-
-                    Today, I stand as a seasoned investigator and security consultant, my name whispered with respect in
-                    boardrooms and back alleys alike. My journey, born from the embers of childhood dreams, has
-                    blossomed into a life richly tapestry-woven with challenge, intrigue, and the incomparable
-                    satisfaction of a job well done.
-                </p>
-                <h2 class="entr"> &#9745; Entrepreneurial Spirit</h2>
-                <p>
-                    While code and melodies have always resonated with me, a deeper rhythm beats within - the rhythm of
-                    innovation, the thrill of building something from the ground up.
-
-                    This passion has borne fruit in multiple ventures. I co-founded a private investigation business,
-                    where the pursuit of truth became a thrilling dance of deduction and discovery. I then co-founded a
-                    music academy, sharing my love for melody and rhythm with aspiring artists. And now, I'm pouring my
-                    heart and soul into my tech startup, a project that promises to revolutionize the African Tech Industry.
-
-                    But my entrepreneurial spirit isn't content with just one melody. The beat of collaboration beckons,
-                    and I'm currently working on co-founding a music studio business, a space where creativity can
-                    flourish and dreams can take flight.
+            <h2 class="entr"> &#9745; Entrepreneur</h2>
+                <p class="bio-desc">
+                    I am the founder of Pesa Consulting and Investigations (PESA) a private investigations firm starting operations
+                    in 2014 and registered in 2016. Under Pesa I provided investigative services for clients from all over the world;
+                    including South Africa, Kenya, Egypt, Ivory Coast, Panama, Taiwan, Ireland, USA, UK, Switzerland, China, etc.
+                    Our clients have been individuals, private investigators, small and multi-national corporations.
+                    
+                    My current venture is founder & CEO of a software company <a href="https://lipila.tech">Lipila Technologies Limited</a>.
+                    Incorporated in 2024.
 
                     For me, being an entrepreneur is more than just building businesses; it's about building a legacy,
                     one venture at a time. It's about harnessing the power of innovation to create a positive impact, to
@@ -100,19 +29,6 @@
                     dreams, I know that the rhythm of my journey will draw others in, inspiring them to tap into their
                     own inner spark and build their own symphonies of success.
                 </p>
-                <h2 class="reader"> &#9745; Book Enthusiast</h2>
-                <p>
-                    From the cosmos to the cobbled streets of history, my curiosity knows no bounds. Science whispers
-                    secrets of the universe, while history echoes with the stories of those who came before. These
-                    whispers and echoes find sanctuary in my ever-growing collection of books, each one a portal to a
-                    new adventure. But knowledge, like a hoarded treasure, withers without sharing. So, I weave the
-                    threads of science, history, and business into tapestries of understanding, leading workshops and
-                    inspiring others to embrace the joy of learning. For me, leadership isn't about titles, but about
-                    igniting the spark of curiosity in others and empowering them to illuminate their own paths. In that
-                    shared light, we build bridges between disciplines, rewrite narratives, and march boldly towards a
-                    future brimming with possibilities.
-                </p>
-
             </div>
         </div>
     </div>
