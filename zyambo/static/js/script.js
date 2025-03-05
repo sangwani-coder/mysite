@@ -1,6 +1,6 @@
 // type bio
 let i = 0;
-const bio = "Founder & CEO Lipila Technologies Limited.";
+const bio = "Private Investigator, Software Developer, and Cybersecurity Analyst. I am always looking for new challenges and opportunities to learn and grow.";
 
 
 
