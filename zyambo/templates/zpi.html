@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% block title%} {{title}}{%endblock%}
+{% block content%}
+<div class="terminal">
+    <div class="container about">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{url_for('static', filename='/img/biz.jpg')}}" class="profile-img"
+                    alt="zyambo img">
+            </div>
+            <h2 class=""> &#9745; {{ title }}</h2>
+                <p class="bio-desc"> I am the founder of Pesa Consulting and Investigations (PESA), a private investigations firm that began operations in 2014 and was officially registered in 2016. Under PESA, I have provided investigative services to clients across the globe, including South Africa, Kenya, Egypt, Ivory Coast, Panama, Taiwan, Ireland, the USA, the UK, Switzerland, China, and more. Our clientele ranges from individuals and private investigators to small businesses and multinational corporations. My work as a private investigator has honed my attention to detail, analytical thinking, and problem-solving skills, enabling me to uncover truths and deliver results in complex and high-stakes situations. </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}

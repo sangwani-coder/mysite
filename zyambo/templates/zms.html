@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% block title%} {{title}} {%endblock%}
+{% block content%}
+<div class="terminal">
+    <audio controls autoplay>
+    <source src="{{url_for('static', filename='/music/Beethoven.ogg')}}" type="audio/ogg">
+    <source src="{{url_for('static', filename='/music/Beethoven.mp3')}}" type="audio/mpeg">
+    </audio>
+    <div class="container about">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{url_for('static', filename='/img/piano.jpg')}}" class="profile-img"
+                    alt="zyambo img">
+            </div>
+            <h2 class="entr"> &#9745; Music Journey</h2>
+                <p class="bio-desc"> Music has been a lifelong passion of mine, and as a pianist, I have had the privilege of both performing and teaching. As a performer, I have played in various settings, from intimate recitals to larger concert venues, bringing emotion and artistry to every piece I play. As a piano teacher, I am dedicated to nurturing the next generation of musicians, helping students of all ages and skill levels discover their love for music and develop their technical and expressive abilities. Music, for me, is a universal language that connects people, and I am committed to sharing its beauty and power with others. </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}

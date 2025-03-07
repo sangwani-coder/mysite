@@ -1,34 +1,15 @@
 {% extends 'base.html'%}
-{% block title%} Zyambo Professional Work{%endblock%}
+{% block title%} {{title}}{%endblock%}
 {% block content%}
 <div class="terminal">
-    <h1 class="heading">Professional Work</h1>
-    <audio controls autoplay>
-    <source src="{{url_for('static', filename='/music/Beethoven.ogg')}}" type="audio/ogg">
-    <source src="{{url_for('static', filename='/music/Beethoven.mp3')}}" type="audio/mpeg">
-    </audio>
     <div class="container about">
         <div class="row">
             <div class="col-md-6">
-                <img src="{{url_for('static', filename='/img/pz-about.png')}}" class="float-md-end image-wrap"
+                <img src="{{url_for('static', filename='/img/pz.JPG')}}" class="profile-img"
                     alt="zyambo img">
             </div>
-            <h2 class="entr"> &#9745; Entrepreneur</h2>
-                <p class="bio-desc">
-                    I am the founder of Pesa Consulting and Investigations (PESA) a private investigations firm starting operations
-                    in 2014 and registered in 2016. Under Pesa I provided investigative services for clients from all over the world;
-                    including South Africa, Kenya, Egypt, Ivory Coast, Panama, Taiwan, Ireland, USA, UK, Switzerland, China, etc.
-                    Our clients have been individuals, private investigators, small and multi-national corporations.
-                    
-                    My current venture is founder & CEO of a software company <a href="https://lipila.tech">Lipila Technologies Limited</a>.
-                    Incorporated in 2024.
-
-                    For me, being an entrepreneur is more than just building businesses; it's about building a legacy,
-                    one venture at a time. It's about harnessing the power of innovation to create a positive impact, to
-                    leave the world a little better than I found it. And as I continue to chase my entrepreneurial
-                    dreams, I know that the rhythm of my journey will draw others in, inspiring them to tap into their
-                    own inner spark and build their own symphonies of success.
-                </p>
+            <h2 class=""> &#9745; {{ title }}</h2>
+                <p class="bio-desc"> I am a multifaceted professional with a diverse range of passions and expertise. As the founder of Pesa Consulting and Investigations (PESA), I have provided investigative services to clients worldwide, honing my skills in analysis, problem-solving, and attention to detail. My entrepreneurial spirit led me to establish <a href="https://lipila.tech">Lipila Technologies Limited</a>, a software company dedicated to creating innovative solutions that address real-world challenges. As a software engineer, I thrive on turning ideas into reality through code, leveraging technology to drive efficiency and growth. Beyond the tech world, I am a passionate musician, performing as a pianist and teaching students to discover the joy of music. Additionally, as a martial artist trained in Kyokushin Karate and Kung Fu, I embrace the discipline and resilience of these practices, both as a practitioner and an instructor. Each of these roles reflects my commitment to continuous growth, innovation, and making a positive impact in the world. </p>
             </div>
         </div>
     </div>

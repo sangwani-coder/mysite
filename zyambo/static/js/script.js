@@ -1,7 +1,6 @@
 // type bio
 let i = 0;
-const bio = "Private Investigator, Software Developer, and Cybersecurity Analyst. I am always looking for new challenges and opportunities to learn and grow.";
-
+const bio = "Pianist, Trumpeter, Karateka, Programmer, Investigator, Entrepreneur, Teacher, Innovator, Visionary.";
 
 
 const lang = 'Python, js, C, MySQL';

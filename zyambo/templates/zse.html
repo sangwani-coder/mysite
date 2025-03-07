@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% block title%} {{title}}{%endblock%}
+{% block content%}
+<div class="terminal">
+    <div class="container about">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{url_for('static', filename='/img/biz.jpg')}}" class="profile-img"
+                    alt="zyambo img">
+            </div>
+            <h2 class=""> &#9745; {{ title }}</h2>
+                <p class="bio-desc"> As a software engineer, I bring a blend of technical expertise and creative problem-solving to every project I undertake. With a strong foundation in programming, system design, and software development, I have worked on a wide range of applications, from web and mobile platforms to enterprise-level systems. My passion for technology drives me to continuously learn and adapt to new tools and methodologies, ensuring that I deliver efficient, scalable, and user-friendly solutions. Whether it’s writing clean code, debugging complex systems, or collaborating with cross-functional teams, I thrive on turning ideas into reality through the power of software. </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}

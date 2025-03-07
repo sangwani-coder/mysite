@@ -12,3 +12,8 @@ from zyambo.views.project import *
 from zyambo.views.portfolio import *
 from zyambo.views.lipila import *
 from zyambo.views.quote import *
+from zyambo.views.zma import *
+from zyambo.views.zpi import *
+from zyambo.views.zep import *
+from zyambo.views.zms import *
+from zyambo.views.zse import *

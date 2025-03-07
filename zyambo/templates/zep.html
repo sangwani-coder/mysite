@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% block title%} {{title}}{%endblock%}
+{% block content%}
+<div class="terminal">
+    <div class="container about">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{url_for('static', filename='/img/biz.jpg')}}" class="profile-img"
+                    alt="zyambo img">
+            </div>
+            <h2 class=""> &#9745; {{ title }}</h2>
+                <p class="bio-desc"> I am the founder and CEO of <a href="https://lipila.tech">Lipila Technologies Limited</a>, a software company incorporated in 2024. Lipila Technologies is dedicated to creating innovative solutions that address real-world challenges, leveraging cutting-edge technology to drive efficiency and growth. As an entrepreneur, I am passionate about building businesses that not only thrive commercially but also make a meaningful impact on society. For me, entrepreneurship is about more than just creating companies—it’s about building a legacy, one venture at a time. I strive to inspire others to embrace innovation, take risks, and pursue their dreams with determination and purpose. </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}

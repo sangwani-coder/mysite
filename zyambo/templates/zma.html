@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% block title%} {{title}}{%endblock%}
+{% block content%}
+<div class="terminal">
+    <div class="container about">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{url_for('static', filename='/img/art.jpg')}}" class="profile-img"
+                    alt="zyambo img">
+            </div>
+            <h2 class=""> &#9745; {{ title }}</h2>
+                <p class="bio-desc"> As a martial artist, I have trained in Kyokushin Karate and Kung Fu, disciplines that have not only strengthened my body but also shaped my mind and spirit. Martial arts have taught me the values of discipline, perseverance, and respect, which I strive to embody in all aspects of my life. As an instructor, I am passionate about sharing these teachings with others, helping students build confidence, focus, and resilience through the practice of martial arts. Whether it’s through rigorous training, sparring, or teaching, I am committed to promoting the physical, mental, and spiritual benefits of martial arts to individuals and communities. </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}

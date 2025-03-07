@@ -7,15 +7,4 @@ from datetime import datetime
 def about() -> str:
     """ about route
     """
-    from zyambo.storage.db import DB
-    today = datetime.today().year
-    dates = {
-        'eng_year': today - 2019,
-        'mus_year': today - 2004,
-        'mat_year': today - 2001,
-        'coach': today - 2008,
-    }
-    print(dates['coach'])
-    DB = DB()
-    about = DB.read_about()
-    return render_template('about.html', about=about, dates=dates)
+    return render_template('about.html', title='Summary')
